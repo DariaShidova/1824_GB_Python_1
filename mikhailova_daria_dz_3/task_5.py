@@ -22,8 +22,9 @@ def get_jokes(n: int, replay=True) -> list or None:
     else:
         while p <= n:
             for name, login, role in zip(random.choices(animal), random.choices(adjective), random.choices(job)):
-                joke.append(f'{name} - {login} {role}')
                 p += 1
+                joke.append(f'{name} - {login} {role}')
+
         return joke
 
 
