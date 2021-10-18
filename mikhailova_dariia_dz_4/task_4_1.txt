@@ -1,0 +1,47 @@
+1.Деактивировать виртуальное окружение
+    >>>(venv) C:\Users\Dashenka\PycharmProjects\1824_GB_Python_1> deactivate
+2.Создать и активировать виртуальное окружение
+Создаём окружение:
+    >>>python -m venv virt
+появилась папка virt
+Активируем виртуальное окружение:
+    >>>"virt/Scripts/activate.bat"
+(virt) C:\Users\Dashenka\PycharmProjects\1824_GB_Python_1>
+3.Установленные пакеты:
+    >>>pip freeze
+ничего не выдал - пакетов нету.
+4.устанавливаем пакет pillow
+    >>>pip install pillow
+    Collecting pillow
+      Using cached Pillow-8.4.0-cp39-cp39-win_amd64.whl (3.2 MB)
+    Installing collected packages: pillow
+    Successfully installed pillow-8.4.0
+    WARNING: You are using pip version 21.2.3; however, version 21.3 is available.
+    You should consider upgrading via the 'C:\Users\Dashenka\PycharmProjects\1824_GB_Python_1\virt\Scripts\python.exe -m
+    pip install --upgrade pip' command.
+5.Проверяю устанновленные пакеты еще раз:
+    >>>pip freeze
+    Pillow==8.4.0
+       >>>pip show pillow
+        Name: Pillow
+        Version: 8.4.0
+        Summary: Python Imaging Library (Fork)
+        Home-page: https://python-pillow.org
+        Author: Alex Clark (PIL Fork Author)
+        Author-email: aclark@python-pillow.org
+        License: HPND
+        Location: c:\users\dashenka\pycharmprojects\1824_gb_python_1\virt\lib\site-packages
+        Requires:
+        Required-by:
+6.>>>python
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+7.Установлен ли пакет pillow в глобальном окружении:
+    PS C:\Users\Dashenka\PycharmProjects\1824_GB_Python_1> pip freeze
+    certifi==2021.10.8
+    charset-normalizer==2.0.7
+    idna==3.3
+    one==0.2.1
+    Pillow==8.4.0
+    requests==2.26.0
+    urllib3==1.26.7
