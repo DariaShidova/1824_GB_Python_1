@@ -6,8 +6,6 @@ def deduction(a):
         text = f.readlines()
         arg = a[1:]
         how_arg = len(arg)
-        if how_arg == 0:
-            print(''.join(text))
         if how_arg > 0:
             for _ in arg:
                 flag = _.isdigit()
@@ -20,6 +18,8 @@ def deduction(a):
                     print(''.join(text[start:stop]))
             else:
                 sys.exit()
+        else:
+            print(''.join(text))
 
 
 if __name__ == '__main__':
