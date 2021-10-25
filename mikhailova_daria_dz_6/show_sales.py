@@ -10,15 +10,17 @@ def deduction(a):
             print(''.join(text))
         if how_arg > 0:
             for _ in arg:
-                if _.isdigit():
-                    start = int(arg[0]) - 1
-                    if how_arg == 1:
-                        print(''.join(text[start:]))
-                    elif how_arg >= 2:
-                        stop = int(arg[1])
-                        print(''.join(text[start:stop]))
-                else:
-                    sys.exit()
+                flag = _.isdigit()
+            if flag:
+                start = int(arg[0]) - 1
+                if how_arg == 1:
+                    print(''.join(text[start:]))
+                elif how_arg >= 2:
+                    stop = int(arg[1])
+                    print(''.join(text[start:stop]))
+            else:
+                sys.exit()
+
 
 if __name__ == '__main__':
     deduction(sys.argv)
