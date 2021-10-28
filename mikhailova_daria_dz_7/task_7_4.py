@@ -8,7 +8,7 @@ for root, dirs, files in os.walk(main_folder):
     for file in files:
         path = os.path.join(root, file)
         size = os.path.getsize(path)
-        to_group = min(filter(lambda i: size < i, max_size))
-        result[to_group] += 1
+        group = min(filter(lambda i: size < i, max_size))
+        result[group] += 1
 
 print(result)
