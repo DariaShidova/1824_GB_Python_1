@@ -15,5 +15,5 @@ class TrafficLight:
                 sleep(5)
 
 
-traffic = TrafficLight()
-traffic.running()
+t = TrafficLight()
+t.running()

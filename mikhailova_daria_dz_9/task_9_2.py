@@ -11,5 +11,5 @@ class Road:
         return asphalt
 
 
-result = Road(5000, 20)
-print(result.mass())
+r = Road(5000, 20)
+print(r.mass())
